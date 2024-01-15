@@ -9,6 +9,9 @@ IDE used: Netbeans
 
 3. Tham khảo
 Code for interview: https://www.youtube.com/watch?v=IeQ7t1P6_0A&t=164s
+
 Geeks For Geeks: https://www.geeksforgeeks.org/introduction-to-java-swing/
+
 javaTpoint: https://www.javatpoint.com/java-swing
+
 VietTus: https://viettuts.vn/java-swing
