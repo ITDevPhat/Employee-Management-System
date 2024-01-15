@@ -1,12 +1,14 @@
 # Employee-Management-System
 1. Giới thiệu
 
-Đây là hệ thống quảnlý nhân viên 
+Đây là hệ thống quản lý nhân viên 
 
 3. Công nghệ
 
 Technologies Used: Core Java (Swing & AWT)
+
 Database Used: MySQL
+
 IDE used: Netbeans  
 
 4. Tham khảo
