@@ -3,9 +3,9 @@ package employee.management.system;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
 
-
-public class Splash extends JFrame{
+public class Splash extends JFrame implements ActionListener{
     //Phương thức khởi tạo của lớp Splash.
     Splash() {
         //Thiết Lập Nền và Layout - Đặt màu nền của cửa sổ là trắng và sử dụng layout tự do.
@@ -37,6 +37,8 @@ public class Splash extends JFrame{
         clickHere.setBounds(400, 400, 300, 70);
         clickHere.setBackground(Color.BLACK);
         clickHere.setForeground(Color.WHITE);
+        //Dòng này đảm bảo rằng phương thức actionPerformed của lớp Splash sẽ được gọi khi nút được nhấn.
+        clickHere.addActionListener(this);
         image.add(clickHere);
         
         //Thiết Lập Kích Thước và Hiển Thị Cửa Sổ:
@@ -57,6 +59,7 @@ public class Splash extends JFrame{
             } catch (Exception e) {
                 
             }
+            
             heading.setVisible(true);
             try {
                 Thread.sleep(500);
@@ -64,6 +67,16 @@ public class Splash extends JFrame{
                 
             }
         }
+    }
+    /**
+     * Phương thức này được gọi khi nút "Click here to continue" được nhấn. 
+     * Nó ẩn cửa sổ splash screen 
+     * và tạo một đối tượng Login mới, chuyển đến cửa sổ đăng nhập.
+     * @param ae 
+     */
+    public void actionPerformed(ActionEvent ae) {
+        setVisible(false);
+        new Login();
     }
     
     public static void main(String args[]) {
