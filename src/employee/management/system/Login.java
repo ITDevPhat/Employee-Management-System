@@ -69,7 +69,7 @@ public class Login extends JFrame implements ActionListener{
             // Tạo đối tượng Conn để thực hiện kết nối đến cơ sở dữ liệu
             Conn c = new Conn();
             // Tạo câu truy vấn SQL kiểm tra thông tin đăng nhập
-            String query = "select * from login where username = '"+username+"' and password = '"+password+"'";
+            String query = "select * from login where username = '" + username + "' and password = '" + password + "'";
             
             // Thực hiện câu truy vấn và nhận kết quả trong ResultSet
             ResultSet rs;
@@ -80,7 +80,8 @@ public class Login extends JFrame implements ActionListener{
             if (rs.next()) {
                 // Nếu có, ẩn frame hiện tại (đăng nhập thành công)
                 setVisible(false);
-                //next class
+                //Chuyển đến class Home()
+                new Home();
             } else {
                 // Nếu không, hiển thị thông báo lỗi và ẩn frame
                 JOptionPane.showMessageDialog(null, "Invalid username or password");

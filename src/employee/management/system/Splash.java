@@ -71,7 +71,7 @@ public class Splash extends JFrame implements ActionListener{
     /**
      * Phương thức này được gọi khi nút "Click here to continue" được nhấn. 
      * Nó ẩn cửa sổ splash screen 
-     * và tạo một đối tượng Login mới, chuyển đến cửa sổ đăng nhập.
+     * và tạo một đối tượng Login mới, ^chuyển đến cửa sổ đăng nhập.
      * @param ae 
      */
     public void actionPerformed(ActionEvent ae) {
