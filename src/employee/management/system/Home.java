@@ -51,6 +51,8 @@ public class Home extends JFrame implements ActionListener{
         remove = new JButton("Remove Employee");
         remove.setBounds(820, 140, 150, 40);
         remove.addActionListener(this);
+        
+        
         image.add(remove);
         
         
@@ -63,13 +65,20 @@ public class Home extends JFrame implements ActionListener{
     // Xử lý sự kiện khi người dùng click vào các nút chức năng
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == add) {
-            
+            //Nếu chọn sự kiện add thì new AddEmployee
+           setVisible(false);
+           new AddEmployee();
         } else if (ae.getSource() == view) {
-            
+            //Chuyển sang class View
+           setVisible(false);
+           new ViewEmployee();
         } else if (ae.getSource() == update) {
-            
+           setVisible(false);
+           new UpdateEmployee("");
+           
         } else { //remove
-            
+           setVisible(false);
+           new RemoveEmployee();
         }
     }
     
